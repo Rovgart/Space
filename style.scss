@@ -1,0 +1,448 @@
+// Sass
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+  }
+  body{
+    color:white;
+    display: grid;
+    // background-image: url('A:/Programming/Websites/Space/img/pexels-francesco-ungaro-998641.jpg');
+
+  
+  }
+  fieldset{
+    display: grid;
+    place-self: center;
+    align-self: center;
+    padding:5rem;
+    max-width: 30%;
+  }
+  form{
+    display:grid;
+    place-items:center;
+    gap:1rem;
+  }
+  label{
+    font-size:24px;
+  }
+  button{
+    border:none;
+    padding:1rem;
+    font-size:1.5rem;
+    background-color:dodgerblue;
+    color:white;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .sign-up{
+    background-color: darkgoldenrod;
+  }
+  input{
+    font-size:24px;
+    padding:.4rem;
+  }
+  input:focus{
+    background-color: rgb(165, 165, 165);
+  }
+  .flex{
+    display:flex;
+  }
+  .buttons{
+    display:flex;
+    gap:2rem;
+  }
+  .diwek{
+    display: grid;
+    grid-template-columns: minmax(0,1fr);
+    place-content: center;
+    height:100vh;
+    // border: 1px solid slateblue;
+  }
+  .equal{
+    place-self: center;
+    display:flex;
+    flex-direction: column;
+    place-content: center;
+    gap:.5rem;
+  }
+  .login{
+    flex-direction: column;
+  }
+  .pass{
+    flex-direction: column;
+  }
+  .logo-box{
+    flex-direction: column;
+    place-items: center;
+    align-self: start;
+    gap: 1rem;
+  }
+  .grid{
+    display:grid;
+  }
+  a:link{
+    color:white;
+  }
+  a:hover{
+    color:white;
+  }
+  a:visited{
+    color:white;
+  }
+  .date-box{
+    place-self: center;
+    flex-direction: column;
+    place-items: center;
+  }
+  input[type='date']{
+    font-size:17px;
+  }
+  .clause{
+    font-size:12px;
+  }
+  .email-box{
+    flex-direction: column;
+  }
+  .password{
+  }
+  .invalid{
+    outline:1px solid red;
+  }
+  .valid
+  .password:focus-within{
+    background-color: white;
+  }
+  button[type='submit']{
+    position:relative;
+    z-index: 2;
+  
+  }
+  button[type='submit']::after{
+    position:absolute;
+    content:"";
+    width:0%;
+    height:100%;
+    transform:translateX(0);
+    transition:transform 250ms ease-in,width 250ms ease-in;
+    background-color: skyblue;
+    top:0;
+    left:0;
+  
+  }
+  button[type='submit']:hover::after{
+    width:100%;
+    transition:translateX(1);
+    z-index:-1;
+  
+  
+  }
+  header{
+    padding:2rem;
+    justify-content: center;
+    place-items: center;
+    background-color: rgba(55, 108, 255, 0.582);
+    background-blend-mode:screen;
+    // background-image: url('/img/pexels-francesco-ungaro-998641.jpg');
+  }
+  .logo{
+    place-items: center;
+    gap:2rem;
+    
+  }
+  .planets-box{
+    /* grid-template-columns: minmax(0,20rem) minmax(0,1fr) minmax(0,1fr) minmax(0,1fr) minmax(0,1) minmax(0,20rem);
+    height: 70vh;
+    grid-template-rows: auto; */
+  }
+  .planet-types-box{
+    justify-content: center;
+    background-color: transparent;
+    border-inline: 1px solid white;
+    border-bottom: 1px solid white;
+  }
+  .list-planets{
+    gap:2rem;
+    padding:1.5rem;
+  }
+  .planet:hover{
+    cursor:pointer;
+  }
+  .planet{
+    position:relative;
+  }
+  .planet::after{
+    position:absolute;
+    content:"";
+    width:0;
+    background-color: white;
+    height:2px;
+    bottom:.8px;
+    transform:translateX(0);
+    transition:transform 150ms ease-in, width 250ms ease-in
+  }
+  .planet:hover::after{
+    width:100%;
+    transform: translateX(1);
+  }
+  li{
+    list-style-type: none;
+  }
+  .information-box{
+    grid-column:3/4;
+  }
+  *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    
+  }
+  /* Utility classes */
+    .ff-lora{
+        font-family: 'Lora', serif;
+    }
+    .ff-raleway{
+        font-family: 'Raleway', sans-serif;
+    }
+    .italic{
+        font-style:italic;
+    }
+  .planets-box{
+    grid-template-columns: minmax(0,20rem) minmax(0,1fr) minmax(0,1fr) minmax(0,1fr) minmax(0,1fr) minmax(0,20rem);
+    gap:min(3rem);
+    position:relative;
+    height: 70vh;
+    place-items: center;
+
+  }
+  .planet-images-box{
+    // border:2px solid yellow;
+  }
+  // .planet-images-box{
+  //   grid-column:2/3;
+  //   grid-row:1/3;
+  //   place-content:end;
+  
+  // }
+  .information-box{
+    grid-column:3/4;
+    place-content:center;
+    gap:2rem;
+    position:relative;
+  }
+  .planet-title{
+  font-size:clamp(2rem,3vw,8rem);
+  }
+  .dots{
+    grid-column:4/5;
+    grid-row:3;
+    gap:1.5rem;
+  
+  }
+  .right-arrow-box{
+    grid-column: 6/7;
+    place-self: center;
+    grid-row:1/3
+  }
+  .left-arrow-box{
+    grid-column: 1/2;
+    grid-row: 1/3;
+    place-self: center;
+  }
+  .Mercury{
+  grid-column:2/6;
+  gap:2rem;
+  // border:2px solid purple;
+  }
+  .Venus{
+    grid-column:2/6;
+    gap:2rem;
+    
+    // border:2px solid purple;
+  }
+  .venusimg{
+    grid-column:2/3;
+  }
+  .venus-text{
+    grid-column:3;
+  }
+  .Earth{
+  grid-column:2/6;
+  gap:2rem;
+  // border:2px solid purple;
+  }
+  #Earth{
+    padding:1rem;
+  }
+  .mars{
+    grid-column:2/6;
+    gap:2rem;
+  // border:2px solid purple;
+  }
+  .Jupiter{
+    grid-column:2/6;
+    gap:2rem;
+  // border:2px solid purple;
+  }
+  .Saturn{
+    grid-column:2/6;
+    gap:2rem;
+  // border:2px solid purple;
+  }
+  #DlaSaturna{
+    grid-column: 1/3;
+  }
+  .Uranus{
+    grid-column:2/6;
+    gap:2rem;
+  // border:2px solid purple;
+  }
+  .Neptune{
+    grid-column:2/6;
+    gap:2rem;
+  // border:2px solid purple;
+  }
+  .planet{
+    margin-top: .5rem;
+  }
+
+  .info{
+  font-size:clamp(.7rem, 1vw,3rem);
+  }
+  .relative{
+  position:relative;
+  }
+  .absolute{
+  position:absolute;
+  }
+  .kolko{
+  color:white;
+  cursor: pointer;
+  }
+  .nineth{
+    display:none;
+  }
+  .kolko:focus{
+  color:black;
+  }
+  .active{
+    transition: opacity 250ms ease-in;
+    opacity:1;
+  }
+  .hidden{
+    opacity:0;
+    transition: opacity 500ms ease-in;
+  }
+  .activeDot{
+    color:grey;
+  }
+  picture>img{
+    max-width:100%;
+  }
+  /* Media queries */
+  @media(max-width:1505px){
+    .planet-images-box{
+        grid-column: 1/5;
+        grid-row:7;
+    }
+    .planets-box{
+      // place-content: center;
+    }
+    #DlaSaturna{
+      grid-column:1/5;
+      grid-row:5;
+      place-items:center;
+    }
+    .information-box{
+        grid-column: 1/5;
+        grid-row:8;
+        text-align: center;
+        place-self: center;
+    }
+    picture>img{
+        max-width: 75%;
+        // min-width: 30%;
+    }
+    .planet-images-box>img{
+        place-self: center;
+    }
+    .dots{
+        grid-column:3/5;
+        grid-row:15;
+        place-self:center;
+    }
+    .left-arrow-box{
+        grid-row:5/6;
+    }
+    .right-arrow-box{
+        grid-row:5/6;
+
+    }
+  }
+  @media(max-width:65rem){
+    .Mercury{
+        grid-column:1/8;
+        grid-row:2;
+        width:70%;
+        place-self: center;
+    }
+    .Venus{
+        grid-column:1/8;
+        place-self: center;
+        width:70%;
+
+    }
+    .Earth{
+        grid-column:1/8;
+        width:70%;
+        place-self: center;
+    }
+    .mars{
+      grid-column: 1/8;
+      width:70%;
+      place-self: center;
+    }
+    .Mars{
+      width:30%;
+    }
+    .Jupiter{
+      grid-column: 1/8;
+      width: 70%;
+      place-self: center;
+
+    }
+   .Saturn{
+      grid-column: 1/8;
+      width: 70%;
+      place-self: center;
+   }
+   #DlaSaturna{
+    grid-row:4;
+   }
+    .Uranus{
+      grid-column: 1/8;
+      width: 70%;
+      place-self: center;
+    }
+    .Neptune{
+      grid-column: 1/8;
+      width: 70%;
+      place-self: center;
+    }
+    .planet-images-box{
+      grid-row:4;
+
+    }
+    .information-box{
+      grid-row:5;
+    }
+    .dots{
+      grid-row:13;
+    }
+  }
+  @media(max-width:48rem){
+    .dots{
+      grid-row:12;
+    }
+  }
